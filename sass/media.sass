@@ -4,7 +4,8 @@
     &-menu
       &__item
         &:hover
-          border-bottom: 1px solid #183B56
+          border: 2px solid #1565D8
+          box-sizing: border-box
     &-button
       &:hover
         border: 2px solid #000
@@ -31,11 +32,17 @@
       display: none
       &__list
         flex-direction: column
-        text-align: center
-        padding-top: 150px
-        border: 1px solid red
+        align-items: center
+        position: absolute
+        top: 30px
+      &__item
+        margin-bottom: 15px
+        margin-right: 0px
+        &:not(:last-child)
+          margin-right: 0
       &__visible
         display: block
+        position: relative
     &-button
       display: none
     &-btn
@@ -48,5 +55,5 @@
       background: none
       border: none
       cursor: pointer
-      margin-top: -3px
+      margin-top: 14px
       margin-right: 11px
