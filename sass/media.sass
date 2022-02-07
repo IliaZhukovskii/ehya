@@ -1,5 +1,6 @@
 @media (min-width: 992px)
   .header
+    max-width: 100%
     &-menu
       &__item
         &:hover
@@ -7,3 +8,45 @@
     &-button
       &:hover
         border: 2px solid #000
+
+@media (max-width: 1200px)
+  .container
+    max-width: 92%
+
+  .header
+    &-button
+      margin-left: 30px
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+
+@media (max-width:760px)
+  .container
+    max-width: 576px
+    width: 88%
+
+  .header
+    padding: 17px 0
+    &-menu
+      display: none
+      &__list
+        flex-direction: column
+        text-align: center
+        padding-top: 150px
+        border: 1px solid red
+      &__visible
+        display: block
+    &-button
+      display: none
+    &-btn
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 22px
+      height: 20px
+      outline: none
+      background: none
+      border: none
+      cursor: pointer
+      margin-top: -3px
+      margin-right: 11px
