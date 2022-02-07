@@ -3,6 +3,6 @@ menuButton.addEventListener("click", function(){
 
 
   document
-    .querySelector(".header-menu")
-    .classList.toggle("header-menu__visible");
+    .querySelector(".mobile-menu")
+    .classList.toggle("mobile-menu__visible");
 })
