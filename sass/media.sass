@@ -63,6 +63,13 @@
     &-line
       width: 100%
       margin-top: -12px
+
+  .category
+    &-wrap
+      width: 90%
+      margin: 0 auto
+      //border: 1px solid red
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -209,6 +216,35 @@
         min-height: 100px
     &-button
       margin-bottom: 20px
+  .slick-slide
+    width: 140px
+    height: 182px
+  .category
+    &-wrap
+      width: 100%
+      flex-wrap: wrap
+      height: 600px
+    &-item
+      width: 140px
+      height: 182px
+      padding: 20px 14px
+      margin-top: 59px
+      &:not(:last-child)
+        margin-right: 0px
+      &__img
+        margin: 0 auto
+        width: 36px
+        height: 36px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin: 41px 0 11px 2px
+        padding: 0
+      &__text
+        font-size: 12px
+        line-height: 20px
+        margin: 0
+        padding: 0
 
 @media (max-width:637px)
   .container
