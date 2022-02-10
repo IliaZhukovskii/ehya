@@ -4,6 +4,7 @@ $('.category-slider').slick({
   slidesToScroll: 1,
   rows: 1,
   autoplaySpeed: 2000,
+  infinite: false,
   centerMode: false,
   variableWidth: true,
   prevArrow: '<svg class="category-prev" width="54" height="56" viewBox="0 0 54 56" fill="#fff" xmlns="http://www.w3.org/2000/svg"><rect class="category-border" x="1" y="1" width="52" height="54" rx="26" stroke="#fff" stroke-width="2"/><path class="category-arrow" d="M27.317 34.9375C27.6295 34.625 27.5982 34.1562 27.317 33.8438L23.5357 30.25H32.5357C32.942 30.25 33.2857 29.9375 33.2857 29.5V28.5C33.2857 28.0938 32.942 27.75 32.5357 27.75H23.5357L27.317 24.1875C27.5982 23.875 27.6295 23.4062 27.317 23.0938L26.6295 22.4062C26.3482 22.125 25.8482 22.125 25.567 22.4062L19.5045 28.5C19.192 28.7812 19.192 29.25 19.5045 29.5312L25.567 35.625C25.8482 35.9062 26.317 35.9062 26.6295 35.625L27.317 34.9375Z" fill="#183B56"/></svg>',
@@ -28,9 +29,28 @@ $('.category-slider').slick({
     {
       breakpoint: 760,
       settings: {
-        rows: 2,
         slidesToShow: 3,
       }
     },
   ]
+});
+
+$('.category-slider').on('afterChange', function(){
+  var currentSlide = $('.category-slider').slick('slickCurrentSlide');
+if(currentSlide==3)
+{
+   $('.category-next').hide();
+   $('.category-prev').show();
+}
+else if(currentSlide==0)
+{
+  $('.category-prev').hide();
+  $('.category-next').show();
+}
+if(currentSlide>0 && currentSlide<3)
+{
+   $('.slick-prev').show();
+   $('.slick-next').show();
+}
+
 });
