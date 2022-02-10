@@ -111,6 +111,37 @@
     &-item
       &:nth-last-child(-n+2)
         display: none
+
+  .blog
+    &-content
+      flex-direction: column
+      margin: 0 auto
+      width: 100%
+      &__wrap
+        width: 100%
+        flex-direction: row
+        justify-content: space-between
+    &-item
+      flex-basis: 50%
+      &:last-child
+        display: none
+      &__img
+        margin-right: 20px
+        border-radius: 8px
+      &__text
+        padding-right: 10px
+    &-big
+      display: flex
+      width: 100%
+      justify-content: space-between
+      align-items: center
+      &__wrap
+        width: 45%
+      img
+        width: 50%
+      &__img
+        width: 50%
+
 @media (max-width: 1150px)
   .video
     &-item
@@ -216,6 +247,36 @@
     &-item
       &:nth-last-child(-n+3)
         display: none
+  .blog
+    &-wrap
+      width: 556px
+      margin: 0 auto
+    &-content
+      &__wrap
+        flex-direction: column
+        justify-content: start
+        margin: 0 auto
+        width: 100%
+    &-item
+      flex-basis: 100%
+      &:last-child
+        display: flex
+      &__img
+        margin-right: 36px
+      &__text
+        padding-right: 1px
+    &-big
+      width: 100%
+      flex-direction: column
+      justify-content: start
+      align-items: flex-start
+      margin-bottom: 40px
+      &__wrap
+        width: 100%
+      img
+        width: 100%
+      &__img
+        width: 100%
 @media (max-width:760px)
   .container
     max-width: 576px
@@ -310,6 +371,7 @@
     width: 140px
     height: 182px
   .category
+    padding-bottom: 19px
     &-wrap
       width: 100%
       flex-wrap: wrap
@@ -337,9 +399,9 @@
         margin: 0
         padding: 0
   .unreleased
+    padding-bottom: 2px
     &-slider
       margin: 0 auto
-      //border: 1px solid red
       padding: 0
 
   .history
@@ -353,7 +415,7 @@
     &-title
       font-size: 28px
       line-height: 36px
-      margin-bottom: 22px
+      margin-bottom: 24px
     &-text
       font-size: 18px
       line-height: 25px
@@ -541,6 +603,82 @@
     right: 54%
     width: 48px
     height: 48px
+
+  .blog
+    padding-top: 55px
+    padding-bottom: 98px
+    &-wrap
+      width: 100%
+      margin: 0 auto
+      position: relative
+      padding-bottom: 50px
+    &-top
+      display: block
+      margin-bottom: 8px
+    &-title
+      text-align: center
+      font-size: 28px
+      line-height: 36px
+    &-button
+      font-size: 14px
+      line-height: 20px
+      position: absolute
+      width: 159px
+      bottom: 0
+      left: 50%
+      transform: translate(-50%, 0)
+    &-content
+      &__wrap
+        flex-direction: column
+        justify-content: start
+        margin: 0 auto
+        width: 100%
+    &-item
+      flex-basis: 100%
+      margin-left: 2px
+      margin-bottom: 31px
+      &:last-child
+        display: flex
+      &__img
+        margin-right: 19px
+        width: 90px
+        height: 90px
+      &__date
+        font-size: 10px
+        line-height: 20px
+        margin-top: 0
+        margin-bottom: 5px
+      &__text
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 3px
+      &__link
+        font-size: 10px
+        line-height: 20px
+    &-big
+      width: 100%
+      margin-bottom: 30px
+      &__wrap
+        width: 100%
+      img
+        width: 100%
+        height: 120px
+      &__img
+        width: 100%
+        height: 120px
+        border-radius: 8px
+        margin-left: 1px
+        margin-bottom: 20px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        padding-left: 0
+        margin-bottom: 10px
+      &__text
+        padding: 0
+        font-size: 12px
+        line-height: 24px
+
 @media (max-width:460px)
   .history
     &-text
