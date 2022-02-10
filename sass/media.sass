@@ -23,6 +23,12 @@
       &:hover
         border: 2px solid #000
 
+  .recommendation-button
+    &:hover
+      color: #183B56
+  .top-button
+    &:hover
+      color: #183B56
   .employees
     &-item
       &:hover
@@ -33,15 +39,31 @@
       &__link
         &:hover
           border-bottom: 2px solid #1565D8
-
+    &-button
+      &:hover
+        color: #183B56
+        border: 2px solid #183B56
   .up
     &:hover
       box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5)
       cursor: pointer
+  .registration-button
+    &:hover
+      color: #1565D8
+  .thank-link
+    &:hover
+      color: #1565D8
+  .footer-icon
+    &:hover
+      background: #183B56
+  .footer-item__item
+    &:hover
+      background: #183B56
+      border-radius: 4px
+      color: #fff
 @media (max-width: 1200px)
   .container
     max-width: 92%
-
   .header
     &-button
       margin-left: 30px
@@ -66,6 +88,7 @@
       justify-content: center
     &-top
       padding-top: 50px
+
   .recommendation
     &-wrap
       width: 100%
@@ -85,13 +108,23 @@
       margin-top: -12px
 
   .category
-    &-wrap
-      width: 90%
-      margin: 0 auto
-    &-slider
-      width: 92%
-      margin: 0 auto
-
+    padding-bottom: 300px
+  .swiper
+    width: 100%
+    height: 500px
+    position: relative
+    overflow: visible
+    border: 1px solid red
+    &-wrapper
+      width: 100%
+      height: 490px
+    &-slide
+      width: 200px
+      height: 200px
+      overflow: hidden
+      &-active
+        width: 200px
+        height: 200px
   .unreleased
     &-slider
       width: 80%
@@ -237,10 +270,6 @@
         margin-bottom: 20px
     &-like
       margin-left: 110px
-  .category
-    &-slider
-      padding-left: 2%
-      padding-right: 1%
   .unreleased
     &-slider
       padding-left: 10%
@@ -404,37 +433,9 @@
         min-height: 100px
     &-button
       margin-bottom: 20px
-  .slick-slide
-    width: 140px
-    height: 182px
+
   .category
     padding-bottom: 19px
-    &-wrap
-      width: 100%
-      flex-wrap: wrap
-      height: 600px
-    &-slider
-      width: 100%
-      height: 100%
-    &-item
-      width: 140px
-      height: 182px
-      padding: 20px 14px
-      margin-top: 59px
-      &__img
-        margin: 0 auto
-        width: 36px
-        height: 36px
-      &__title
-        font-size: 16px
-        line-height: 20px
-        margin: 41px 0 11px 2px
-        padding: 0
-      &__text
-        font-size: 12px
-        line-height: 20px
-        margin: 0
-        padding: 0
   .unreleased
     padding-bottom: 2px
     &-slider
