@@ -65,4 +65,4 @@ catch (Exception $e) {
 
 
 // Отображение результата
-header('Location: thankyou.html');
+header('Location: thank.html');

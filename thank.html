@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ehya</title>
+     <link rel="shortcut icon" href="img/header/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="img/header/favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@500&family=Roboto:wght@500&family=Roboto:wght@500&display=swap');
+     </style>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+     </style>
+</head>
+
+<body>
+
+
+     <header class="header">
+          <div class="container">
+               <div class="header-wrap">
+                    <div class="header-logo">
+                         <a href="index.html">
+                              <img src="img/header/Logo.png" alt="logo" class="header-logo__img">
+                         </a>
+                    </div>
+                    <div class="header-menu">
+                         <ul class="header-menu__list">
+                              <li class="header-menu__item"><a href="#registration">Рекомендации</a> </li>
+                              <li class="header-menu__item"><a href="#unreleased">Книги</a> </li>
+                              <li class="header-menu__item"><a href="#blog">Блог</a> </li>
+                         </ul>
+                    </div>
+                    <button class="header-button modal-open">Получить</button>
+                    <button class="header-btn">
+                         <span class="line"></span>
+                         <span class="line"></span>
+                         <span class="line"></span>
+                    </button>
+               </div>
+               <ul class="mobile-menu">
+                    <li class="mobile-menu__item"><a href="#registration">Рекомендации</a></li>
+                    <li class="mobile-menu__item"><a href="#unreleased">Книги</a></li>
+                    <li class="mobile-menu__item"><a href="#blog">Блог</a></li>
+               </ul>
+          </div>
+     </header>
+
+     <div class="modal">
+          <div class="modal-overlay"></div>
+          <div class="modal-dialog">
+               <div class="modal-title">receive</div>
+               <div class="modal-close">
+                    <img src="img/modal/modal-close.svg" alt="close">
+               </div>
+               <form action="modal.php" method="post" class="modal-form form-validate">
+                    <input type="text" class="modal-input modal-input--name" placeholder="Your Full Name*" name="name"
+                         required minlength="2">
+                    <input type="tel" class="modal-input modal-input--number number-mask" placeholder="Phone Number*"
+                         name="phone" required minlength="17">
+                    <input type="email" class="modal-input modal-input--email" placeholder="Email*" name="email"
+                         required minlength="7">
+                    <textarea class="modal-input modal-input--message" name="message" placeholder="Message"></textarea>
+                    <button class="modal-button" type="submit">Send</button>
+               </form>
+          </div>
+     </div>
+
+     <section class="thank">
+          <div class="container">
+               <div class="thank-wrap">
+                    <h1 class="thank-title">Письмо отправлено</h1>
+                    <a class="thank-link" href="index.html">Вернуться на главную</a>
+               </div>
+          </div>
+     </section>
+
+     <footer class="footer">
+          <div class="container">
+               <div class="footer-wrap">
+                    <div class="footer-logo">
+                         <a class="footer-logo__img" href="index.html"> <img src="img/header/Logo.png" alt="logo"></a>
+                         <div class="footer-text">Создайте современный и креативный веб-сайт с crealand</div>
+                         <div class="footer-logo__icon">
+                              <a class="footer-icon" href="https://www.google.com/"><img
+                                        src="img/footer/icon-google.svg" alt="icon"></a>
+                              <a class="footer-icon" href="https://twitter.com/"><img src="img/footer/icon-twiter.svg"
+                                        alt="icon"></a>
+                              <a class="footer-icon" href="https://www.instagram.com/"><img
+                                        src="img/footer/icon-instagram.svg" alt="icon"></a>
+                              <a class="footer-icon" href="https://www.nlstar.com/ru/"><img src="img/footer/icon-in.svg"
+                                        alt="icon"></a>
+                         </div>
+
+                    </div>
+                    <ul class="footer-item footer-product">
+                         <li class="footer-item__title"><a href="#">Продукт</a></li>
+                         <li class="footer-item__item"> <a href="#">Лэндинг</a></li>
+                         <li class="footer-item__item"> <a href="#">Функции</a></li>
+                         <li class="footer-item__item"> <a href="#">Документация</a></li>
+                         <li class="footer-item__item"> <a href="#">Скидки</a></li>
+                         <li class="footer-item__item"> <a href="#">Расценки</a></li>
+                    </ul>
+                    <ul class="footer-item footer-services">
+                         <li class="footer-item__title"><a href="#">Сервисы</a></li>
+                         <li class="footer-item__item"><a href="#">Документация</a></li>
+                         <li class="footer-item__item"><a href="#">Дизайн</a></li>
+                         <li class="footer-item__item"><a href="#">Темы</a></li>
+                         <li class="footer-item__item"><a href="#">Илюстрации</a></li>
+                         <li class="footer-item__item"><a href="#">UI Kit</a></li>
+                    </ul>
+                    <ul class="footer-item footer-company">
+                         <li class="footer-item__title"><a href="#">Компания</a></li>
+                         <li class="footer-item__item"><a href="#">О нас</a></li>
+                         <li class="footer-item__item"><a href="#">Условия</a></li>
+                         <li class="footer-item__item"><a href="#">Privacy Policy</a></li>
+                         <li class="footer-item__item"><a href="#">Careers</a></li>
+                    </ul>
+                    <ul class="footer-item footer-more">
+                         <li class="footer-item__title"><a href="#">Еще..</a></li>
+                         <li class="footer-item__item"><a href="#">Документация</a></li>
+                         <li class="footer-item__item"><a href="#">Лицензия</a></li>
+                         <li class="footer-item__item"><a href="#">Изменения</a></li>
+                    </ul>
+               </div>
+               <div class="footer-bottom">
+                    <img class="footer-bottom__heart" src="img/footer/heart.svg" alt="heart">
+                    <div class="footer-bottom__text">Copyright © 2019. Crafted with love.</div>
+               </div>
+          </div>
+     </footer>
+
+     <div class="up">
+          <a href="#">
+               <img src="img/footer/up.svg" class="up-img" alt="up">
+          </a>
+     </div>
+
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="js/modal-validate.js"></script>
+     <script src="js/jquery.mask.min.js"></script>
+     <script src="js/category-slider.js"></script>
+     <script src="js/unreleased-slider.js"></script>
+     <script src="js/modal.js"></script>
+     <script src="js/menu.js"></script>
+     <script src="js/like.js"></script>
+     <script src="js/jquery.fancybox.min.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
+
+</body>
+
+</html>
