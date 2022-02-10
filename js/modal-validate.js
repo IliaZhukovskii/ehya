@@ -22,7 +22,7 @@ $(document).ready(function(){
   $('.number-mask').mask('+7(000) 000-00-00');
   
     //Подключение анимации
-   AOS.init();
+   //AOS.init();
 
 });
 
