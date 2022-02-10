@@ -151,6 +151,15 @@
       margin-top: 10px
       text-align: center
       margin-bottom: 10px
+
+  .footer
+    &-wrap
+      flex-wrap: wrap
+      justify-content: space-around
+    &-item
+      &:not(:nth-last-child(-n+2))
+        margin-bottom: 40px
+
 @media (max-width: 1150px)
   .video
     &-item
@@ -519,6 +528,51 @@
       left: 19px
   .span
     display: block
+
+  .footer
+    padding-top: 48px
+    &-wrap
+      justify-content: space-between
+      padding-left: 5px
+      padding-right: 33px
+    &-logo
+      display: flex
+      flex-direction: column
+      align-items: center
+      order: 10
+      margin-top: 44px
+      flex-basis: 100%
+      &__img
+        margin-left: 28px
+      &__icon
+        padding-left: 25px
+    &-text
+      text-align: center
+      margin-top: 11px
+      margin-left: 8px
+      margin-bottom: 24px
+    &-icon
+      padding: 11px 12px 9px 13px
+    &-item
+      padding-left: 0
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+      &__item
+        font-size: 14px
+        line-height: 20px
+        &:not(:last-child)
+          margin-bottom: 15px
+    &-product
+      margin-right: 0px
+    &-services
+      margin-right: 0px
+    &-company
+      margin-right: 0px
+    &-bottom
+      display: none
+
 @media (max-width:648px)
   .employees
     &-wrap
