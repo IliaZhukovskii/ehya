@@ -61,6 +61,11 @@
       background: #183B56
       border-radius: 4px
       color: #fff
+
+@media (max-width: 1230px)
+  .category
+    &-next
+      right: -20px
 @media (max-width: 1200px)
   .container
     max-width: 92%
@@ -106,31 +111,32 @@
     &-line
       width: 100%
       margin-top: -12px
-
-  .category
-    padding-bottom: 300px
-  .swiper
-    width: 100%
-    height: 500px
-    position: relative
-    overflow: visible
-    border: 1px solid red
-    &-wrapper
-      width: 100%
-      height: 490px
-    &-slide
-      width: 200px
-      height: 200px
-      overflow: hidden
-      &-active
-        width: 200px
-        height: 200px
   .unreleased
     &-slider
       width: 80%
       margin: 0 auto
       padding: 0 5%
 
+  .child
+    &:first-child
+      display: none
+    &:last-child
+      display: block
+  .category
+    padding-bottom: 80px
+    &-wrap
+      height: 600px
+    &-to
+      width: 550px
+      height: 600px
+      margin: 0 auto
+    &-item
+      width: 265px
+      height: 240px
+      margin-right: 20px
+      display: block
+    &-next
+      right: -15px
   .history
     &-wrap
       width: 92%
@@ -185,10 +191,11 @@
       width: 100%
       justify-content: space-between
       align-items: center
+      margin-bottom: 30px
       &__wrap
         width: 45%
       img
-        width: 50%
+        width: 100%
       &__img
         width: 50%
 
@@ -436,6 +443,47 @@
 
   .category
     padding-bottom: 19px
+    padding-top: 48px
+    &-wrap
+      width: 100%
+      padding-top: 56px
+      height: 552px
+    &-to
+      width: 290px
+      height: 460px
+      margin: 0 auto
+      position: relative
+    &-item
+      width: 140px
+      height: 182px
+      margin-right: 10px
+      padding: 20px 14px
+      margin-bottom: 10px
+      &__img
+        width: 36px
+        height: 36px
+      &__title
+        font-family: 'Roboto Condensed', sans-serif
+        font-size: 16px
+        line-height: 20px
+        margin-top: 16px
+        margin-bottom: 10px
+        margin-left: -4px
+      &__text
+        font-size: 12px
+        line-height: 20px
+        &-top
+          margin-top: 30px
+    &-next
+      width: 48px
+      height: 48px
+      right: 94px
+      top: 432px
+    &-prev
+      width: 48px
+      height: 48px
+      left: 90px
+      top: 432px
   .unreleased
     padding-bottom: 2px
     &-slider
@@ -799,6 +847,8 @@
         line-height: 20px
         padding-left: 0
         margin-bottom: 10px
+        margin-top: 0
+
       &__text
         padding: 0
         font-size: 12px
