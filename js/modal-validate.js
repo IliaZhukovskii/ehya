@@ -13,7 +13,7 @@ $(document).ready(function(){
           minlength: "Phone must be at least 11 letters",
         },
         email: {
-          required: "Your email address must be in the format of name@domain.com",
+          required: "Format: name@domain.com",
         }
       }
     })
